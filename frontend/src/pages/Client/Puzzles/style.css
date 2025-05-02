@@ -1,0 +1,27 @@
+body {
+  background-color: #e5e4e2;
+  min-height: 100vh;
+}
+
+.puzzle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  width: calc(100% - 60px);
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.puzzle-card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #complete {
+    margin-top: 5rem !important;
+  }
+}

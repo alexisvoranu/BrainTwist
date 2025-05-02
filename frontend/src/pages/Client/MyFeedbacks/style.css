@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  .myF {
+    margin-top: 0%;
+    transform: scale(1);
+  }
+
+  .fb {
+    width: 140%;
+  }
+
+  .dF {
+    display: none;
+  }
+}

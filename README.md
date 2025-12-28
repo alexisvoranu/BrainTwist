@@ -25,15 +25,15 @@
 
 ### 🔄 Smart Data Synchronization
 * **Hybrid Cart System:** Implements local storage for guest users and Firestore for authenticated users.
-* [cite_start]**Auto-Merge Logic:** Custom algorithms automatically merge local guest cart/wishlist data with the user's persistent database record upon successful login/registration[cite: 611].
+* **Auto-Merge Logic:** Custom algorithms automatically merge local guest cart/wishlist data with the user's persistent database record upon successful login/registration.
 
 ### 💳 Secure Payment Flow
 * **Stripe Integration:** Utilizes Stripe Checkout/Elements for handling sensitive card data.
-* [cite_start]**Server-Side Processing:** Backend validates cart totals and inventory before creating Payment Intents to prevent client-side manipulation[cite: 508].
+* **Server-Side Processing:** Backend validates cart totals and inventory before creating Payment Intents to prevent client-side manipulation.
 
 ### ⚡ Real-Time Inventory Management
 * **Firestore Listeners:** The Admin Dashboard utilizes Firestore's real-time capabilities to reflect stock changes instantly without page reloads.
-* [cite_start]**Dynamic UI:** Frontend components react immediately to backend state changes (e.g., "Last item in stock" indicators)[cite: 469].
+* **Dynamic UI:** Frontend components react immediately to backend state changes (e.g., "Last item in stock" indicators).
 
 ---
 
@@ -43,4 +43,4 @@ Optimized for low latency and high SEO rankings.
 * **Desktop Performance:** 97/100
 * **SEO:** 100/100
 * **Best Practices:** 96/100
-[cite_start]*(Audited via PageSpeed Insights, March 2025)*[cite: 816].
+*(Audited via PageSpeed Insights, March 2025)*.

@@ -1,0 +1,56 @@
+.container {
+  margin-bottom: 1rem;
+}
+
+.card-6ad47a {
+  margin-bottom: 1rem;
+}
+
+.card-6ad47a-body {
+  padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .col-sm-5,
+  .col-sm-2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .col-sm-5.text-lg-end {
+    text-align: center !important;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .col-sm-5,
+  .col-sm-2 {
+    width: 100%;
+  }
+
+  .card-6ad47a-body {
+    padding: 0.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+  }
+}

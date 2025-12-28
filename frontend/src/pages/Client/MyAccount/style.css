@@ -1,0 +1,153 @@
+.name {
+  text-align: center;
+}
+
+body #contulMeu {
+  background: #eeeeee;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.img-account-profile {
+  height: 10rem;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.cardCM {
+  background-color: white;
+  box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+  padding: 3rem;
+  border-radius: 20px;
+  width: 70%;
+  margin-left: 14%;
+}
+
+.cardCM .cardCM-header {
+  font-weight: 500;
+}
+
+.cardCM-header:first-child {
+  border-radius: 0.35rem 0.35rem 0 0;
+}
+
+.cardCM-header {
+  padding: 1rem 1.35rem;
+  margin-bottom: 0;
+  background-color: rgba(33, 40, 50, 0.03);
+  border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+
+.form-control,
+.dataTable-input {
+  display: block;
+  width: 100%;
+  padding: 0.875rem 1.125rem;
+  font-size: 0.875rem;
+  font-weight: 450;
+  line-height: 1;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c5ccd6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.35rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.nav-borders .nav-link.active {
+  color: #0061f2;
+  border-bottom-color: #0061f2;
+}
+
+.nav-borders .nav-link {
+  color: #69707a;
+  border-bottom-width: 0.125rem;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .cardCM {
+    width: 85%;
+    margin-left: 7.5%;
+  }
+
+  .cardCM-header {
+    font-size: 1.1rem;
+  }
+
+  .form-control,
+  .dataTable-input {
+    font-size: 1rem;
+  }
+
+  .nav-borders .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardCM {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .cardCM-header {
+    font-size: 1rem;
+  }
+
+  .form-control,
+  .dataTable-input {
+    font-size: 1rem; 
+  }
+
+  .img-account-profile {
+    height: 8rem; 
+  }
+
+  .nav-borders .nav-link {
+    font-size: 0.9rem; 
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardCM {
+    width: 95%;
+    margin-left: 2.5%;
+    padding: 2rem; 
+  }
+
+  .form-control,
+  .dataTable-input {
+    font-size: 1rem; 
+  }
+
+  .nav-borders .nav-link {
+    font-size: 0.85rem; 
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .img-account-profile {
+    height: 7rem; 
+  }
+
+  .name h2 {
+    font-size: 1.25rem; 
+  }
+}
+

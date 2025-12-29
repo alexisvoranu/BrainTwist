@@ -68,7 +68,7 @@ To encourage retention, the platform implements a tiered reward system based on 
 
 <img width="940" height="390" alt="image" src="https://github.com/user-attachments/assets/c883002f-d989-4705-b87a-8454ddbc987e" />
 
-### 🛡️ 5. Admin Dashboard
+### 5. Admin Dashboard
 A restricted area for administrators to manage the business in real-time:
 * **Live Inventory:** Monitor stock levels; low-stock items are highlighted.
 * **Order Processing:** Update order statuses (e.g., mark as "Shipped").
@@ -76,7 +76,7 @@ A restricted area for administrators to manage the business in real-time:
 
 <img width="940" height="441" alt="image" src="https://github.com/user-attachments/assets/ea76a859-234d-46d3-bee3-3f7e908d1a3c" />
 
-### ⭐ 6. Reviews & Ratings
+### 6. Reviews & Ratings
 Authenticated users can leave detailed reviews based on multiple criteria:
 * Difficulty Perceived
 * Material Quality
@@ -87,7 +87,7 @@ Authenticated users can leave detailed reviews based on multiple criteria:
 
 ---
 
-## 📊 Performance
+## Performance
 
 The application is optimized for speed and SEO, achieving high scores in Google PageSpeed Insights:
 

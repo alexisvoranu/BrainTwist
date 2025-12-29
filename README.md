@@ -69,19 +69,19 @@ To encourage retention, the platform implements a tiered reward system based on 
 <img width="940" height="390" alt="image" src="https://github.com/user-attachments/assets/c883002f-d989-4705-b87a-8454ddbc987e" />
 
 ### 🛡️ 5. Admin Dashboard
-[cite_start]A restricted area for administrators to manage the business in real-time[cite: 523]:
-* [cite_start]**Live Inventory:** Monitor stock levels; low-stock items are highlighted[cite: 580].
-* [cite_start]**Order Processing:** Update order statuses (e.g., mark as "Shipped")[cite: 550].
-* [cite_start]**Product Management:** Add or edit product details, prices, images, and descriptions instantly[cite: 553].
+A restricted area for administrators to manage the business in real-time:
+* **Live Inventory:** Monitor stock levels; low-stock items are highlighted.
+* **Order Processing:** Update order statuses (e.g., mark as "Shipped").
+* **Product Management:** Add or edit product details, prices, images, and descriptions instantly.
 
 <img width="940" height="441" alt="image" src="https://github.com/user-attachments/assets/ea76a859-234d-46d3-bee3-3f7e908d1a3c" />
 
 ### ⭐ 6. Reviews & Ratings
-[cite_start]Authenticated users can leave detailed reviews based on multiple criteria[cite: 723]:
+Authenticated users can leave detailed reviews based on multiple criteria:
 * Difficulty Perceived
 * Material Quality
 * Solving Experience
-* [cite_start]Value for Money [cite: 726-730]
+* Value for Money
 
 <img width="940" height="286" alt="image" src="https://github.com/user-attachments/assets/e0921b88-9d3c-4a84-a458-5e19731fcc55" />
 
@@ -89,10 +89,10 @@ To encourage retention, the platform implements a tiered reward system based on 
 
 ## 📊 Performance
 
-[cite_start]The application is optimized for speed and SEO, achieving high scores in Google PageSpeed Insights[cite: 808]:
+The application is optimized for speed and SEO, achieving high scores in Google PageSpeed Insights:
 
-* [cite_start]**Performance:** 97/100 [cite: 816]
-* [cite_start]**SEO:** 100/100 [cite: 819]
-* [cite_start]**Best Practices:** 96/100 [cite: 818]
+* **Performance:** 97/100 
+* **SEO:** 100/100 
+* **Best Practices:** 96/100 
 
 ---

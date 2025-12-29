@@ -1,44 +1,98 @@
-# BrainTwist - E-Commerce Platform
+# BrainTwist - Advanced E-Commerce Platform
 
-**BrainTwist** is a full-stack B2C e-commerce application engineered for puzzle enthusiasts. Built from the ground up, it leverages a decoupled Client-Server architecture to deliver high performance, real-time data synchronization, and secure payment processing.
+**BrainTwist** is a robust, full-stack B2C e-commerce solution designed specifically for the niche market of mechanical puzzles (Jigsaw, Rubik's, and IQ Puzzles).
 
----
+Unlike standard CMS-based stores, BrainTwist is architected from scratch to demonstrate a high-performance, scalable, and fully customizable implementation using **React**, **Node.js**, and **Firebase**. It features real-time data synchronization, secure payment processing via Stripe, and a complex loyalty system.
 
-## Technology Stack
-
-### Core Architecture
-* **Frontend:** React.js (Virtual DOM), Bootstrap (Responsive UI)
-* **Backend:** Node.js, Express.js (RESTful API)
-* **Database:** Google Firebase Firestore (NoSQL, Real-time)
-* **Payments:** Stripe API (PCI-DSS compliant)
-
-### DevOps & Deployment
-* **Frontend Hosting:** Vercel (CI/CD integration)
-* **Backend Hosting:** Render (Auto-scaling)
-* **Version Control:** Git & GitHub
+**Live Demo:** [https://[brain-twist-frontend.vercel.app](https://braintwist.vercel.app/)]
 
 ---
 
-## Technical Highlights
+## Technical Architecture
 
-### Smart Data Synchronization
-* **Hybrid Cart System:** Implements local storage for guest users and Firestore for authenticated users.
-* **Auto-Merge Logic:** Custom algorithms automatically merge local guest cart/wishlist data with the user's persistent database record upon successful login/registration.
+The application follows a decoupled **Client-Server** architecture, ensuring separation of concerns and independent scalability.
 
-### Secure Payment Flow
-* **Stripe Integration:** Utilizes Stripe Checkout/Elements for handling sensitive card data.
-* **Server-Side Processing:** Backend validates cart totals and inventory before creating Payment Intents to prevent client-side manipulation.
+### 1. Backend (Node.js & Express)
+* **RESTful API:** Built with Express.js to handle business logic, routing, and middleware.
+* **Performance:** Leverages Node.js's non-blocking I/O to handle concurrent requests efficiently, essential for variable traffic.
+* **Stripe Integration:** Server-side handling of secure transactions without storing sensitive card data.
 
-### Real-Time Inventory Management
-* **Firestore Listeners:** The Admin Dashboard utilizes Firestore's real-time capabilities to reflect stock changes instantly without page reloads.
-* **Dynamic UI:** Frontend components react immediately to backend state changes (e.g., "Last item in stock" indicators).
+### 2. Database (Google Firebase Firestore)
+* **Real-time Capabilities:** Utilizes Firestore to instantly update stock levels and order statuses without requiring page reloads.
+* **Scalability:** Automatically handles data growth and user traffic.
+* **Security:** Integrated rules to protect user transactions and data.
+
+### 3. Frontend (React)
+* **Component-Based:** Modular architecture allows for reusable elements like product cards and filters.
+* **Virtual DOM:** Ensures fast rendering and a smooth user experience.
+* **Bootstrap:** Utilized for a fully responsive, mobile-first design.
+
+### 4. Hosting & DevOps
+* **Frontend:** Deployed on **Vercel** for fast content delivery.
+* **Backend:** Hosted on **Render**, benefiting from auto-scaling capabilities.
 
 ---
 
-## Performance Metrics
+## Key Features
 
-Optimized for low latency and high SEO rankings.
-* **Desktop Performance:** 97/100
-* **SEO:** 100/100
-* **Best Practices:** 96/100
-*(Audited via PageSpeed Insights, March 2025)*.
+### 1. Smart Shopping Cart & Wishlist
+One of the core innovations of BrainTwist is its hybrid cart system:
+* **Guest Access:** Unauthenticated users can add items to their cart and wishlist (stored locally).
+* **Auto-Merge:** Upon logging in, the local cart is automatically synchronized and merged with the user's persistent database cart. This ensures a seamless transition from browsing to purchasing.
+
+<img width="882" height="408" alt="image" src="https://github.com/user-attachments/assets/74d588cc-1637-4975-89ba-765c0acaa0fe" />
+
+### 2. Advanced Product Discovery
+Users can easily find products using dynamic filters tailored to specific categories:
+* **Global Filters:** Price range.
+* **Category Specific:**
+    * *Rubik's:* Filter by **Magnet Strength**.
+    * *IQ Puzzles:* Filter by **Difficulty Level**.
+    * *Jigsaw:* Filter by **Piece Count**.
+
+<img width="243" height="489" alt="image" src="https://github.com/user-attachments/assets/d8ee3471-e52a-4dc5-a124-0a6d87c49773" />
+
+### 3. Loyalty & Gamification System
+To encourage retention, the platform implements a tiered reward system based on order history:
+* **Order #3:** Unlocks **Free Shipping**.
+* **Order #5:** Unlocks a **25% Discount Voucher**.
+* **Order #10:** Unlocks a massive **40% Discount**.
+* **Set Completion:** 20% discount applied when buying one product from each category (Jigsaw + Rubik + IQ).
+
+<img width="961" height="576" alt="image" src="https://github.com/user-attachments/assets/7fff21ec-62c0-49ae-9f1f-d63f6811688c" />
+
+### 4. Comprehensive Order Management
+* **User Dashboard:** Full history of past orders with status tracking (Confirmed, Preparing, Shipped).
+* **PDF Invoicing:** Users can generate and download official PDF invoices for every completed order directly from their dashboard.
+* **Email Notifications:** Automated confirmation emails containing order details, applied discounts, and shipping info.
+
+<img width="940" height="390" alt="image" src="https://github.com/user-attachments/assets/c883002f-d989-4705-b87a-8454ddbc987e" />
+
+### 🛡️ 5. Admin Dashboard
+[cite_start]A restricted area for administrators to manage the business in real-time[cite: 523]:
+* [cite_start]**Live Inventory:** Monitor stock levels; low-stock items are highlighted[cite: 580].
+* [cite_start]**Order Processing:** Update order statuses (e.g., mark as "Shipped")[cite: 550].
+* [cite_start]**Product Management:** Add or edit product details, prices, images, and descriptions instantly[cite: 553].
+
+<img width="940" height="441" alt="image" src="https://github.com/user-attachments/assets/ea76a859-234d-46d3-bee3-3f7e908d1a3c" />
+
+### ⭐ 6. Reviews & Ratings
+[cite_start]Authenticated users can leave detailed reviews based on multiple criteria[cite: 723]:
+* Difficulty Perceived
+* Material Quality
+* Solving Experience
+* [cite_start]Value for Money [cite: 726-730]
+
+<img width="940" height="286" alt="image" src="https://github.com/user-attachments/assets/e0921b88-9d3c-4a84-a458-5e19731fcc55" />
+
+---
+
+## 📊 Performance
+
+[cite_start]The application is optimized for speed and SEO, achieving high scores in Google PageSpeed Insights[cite: 808]:
+
+* [cite_start]**Performance:** 97/100 [cite: 816]
+* [cite_start]**SEO:** 100/100 [cite: 819]
+* [cite_start]**Best Practices:** 96/100 [cite: 818]
+
+---
